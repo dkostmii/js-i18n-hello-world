@@ -1,0 +1,99 @@
+@import 'colors'
+
+/* Tri */
+.tri
+  width: 8.46px
+  height: 5.7px
+
+  /* Inside auto layout */
+
+  flex: none
+  order: 1
+  flex-grow: 0
+
+.selection *
+  cursor: pointer
+
+/* Language selection */
+.selection
+  background: $bg
+  /* Auto layout */
+
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  padding: 0px 8px 2px
+  gap: 6px
+
+  height: 84px
+
+
+  /* Inside auto layout */
+
+  flex: none
+  order: 1
+  flex-grow: 0
+
+  /* Language selection button */
+  &__button
+    /* Auto layout */
+
+    display: flex
+    flex-direction: row
+    align-items: center
+    padding: 0px
+    gap: 6px
+
+    /* Inside auto layout */
+
+    flex: none
+    order: 0
+    align-self: stretch
+    flex-grow: 0
+    color: $onBackground
+
+  &__button > .label
+    font-family: 'Poppins'
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 24px
+    /* identical to box height */
+    
+    &__i18n_ukr
+      font-family: 'Open Sans'
+      font-style: normal
+      font-weight: 400
+      font-size: 16px
+      line-height: 22px
+
+  &__hidden
+    overflow: hidden
+    height: 24px
+    background: transparent
+
+  &__button .tri
+    transform: rotate(180deg)
+
+  &__hidden > &__button .tri
+    transform: rotate(0)
+
+
+.selection > .label
+  font-family: 'Poppins'
+  font-style: normal
+  font-weight: 400
+  font-size: 16px
+  line-height: 24px
+  /* identical to box height */
+
+  /* OnBackground */
+  color: $onBackground
+
+  &__i18n_ukr
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 22px
+    /* identical to box height */

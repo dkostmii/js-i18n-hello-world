@@ -1,0 +1,322 @@
+@import 'colors'
+
+/* Home page */
+.app
+  position: relative
+  width: 1440px
+  height: 1024px
+
+  /* HomePageGradient */
+  background: radial-gradient(59.31% 84.87% at 81.28% 41.36%, #423232 0%, #0D1426 58.04%)
+
+/* Header */
+.header
+  box-sizing: border-box
+  /* Auto layout */
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: baseline
+  padding: 30px 105px
+  gap: 210px
+
+  position: absolute
+  width: 1440px
+  height: 108px
+  left: 0px
+  top: 0px
+
+  /* Left */
+  &__left
+    /* Auto layout */
+
+    display: flex
+    flex-direction: row
+    align-items: baseline
+    padding: 0px
+    gap: 96px
+
+    width: 780px
+    height: 36px
+
+
+    /* Inside auto layout */
+
+    flex: none
+    order: 0
+    flex-grow: 0
+
+
+/* Side */
+.side
+  /* Auto layout */
+
+  display: flex
+  flex-direction: row
+  justify-content: flex-end
+  align-items: baseline
+  padding: 0px
+  gap: 30px
+
+  width: 259.46px
+  height: 48px
+
+
+  /* Inside auto layout */
+
+  flex: none
+  order: 1
+  flex-grow: 0
+
+/* Navigation */
+.navigation
+  list-style: none
+  /* Auto layout */
+
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  padding: 0px
+  gap: 48px
+
+  width: 570px
+  height: 24px
+
+
+  /* Inside auto layout */
+
+  flex: none
+  order: 1
+  flex-grow: 0
+  
+  &__item
+    font-family: 'Poppins'
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 24px
+    /* identical to box height */
+
+
+    /* OnBackgroundLight */
+
+    color: $onBackgroundLight
+
+
+    /* Inside auto layout */
+
+    flex: none
+    order: 0
+    flex-grow: 0
+
+    &__i18n_ukr
+      font-family: 'Open Sans'
+      font-style: normal
+      font-weight: 400
+      font-size: 16px
+      line-height: 22px
+      /* identical to box height */
+
+
+/* Logo */
+.logo
+  width: 114px
+  height: 36px
+
+  font-family: 'Poppins'
+  font-style: normal
+  font-weight: 400
+  font-size: 24px
+  line-height: 36px
+  /* identical to box height */
+
+
+  /* OnBackground */
+
+  color: $onBackground
+
+
+  /* Inside auto layout */
+
+  flex: none
+  order: 0
+  flex-grow: 0
+
+.button
+  cursor: pointer
+  border: none
+
+  /* Change crypto button (Small) */
+  &__small
+    /* Auto layout */
+
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    padding: 12px 24px
+    gap: 10px
+
+    /* Accent */
+
+    background: $accent
+
+    /* Inside auto layout */
+
+    flex: none
+    order: 0
+    flex-grow: 0
+
+    /* Change crypto */
+    font-family: 'Poppins'
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 24px
+    /* identical to box height */
+
+
+    /* OnAccent */
+    color: $onAccent
+
+    &__i18n_ukr
+      font-family: 'Open Sans'
+      font-style: normal
+      font-weight: 400
+      font-size: 16px
+      line-height: 22px
+
+    /* Change crypto button (Large) */
+  &__large
+    /* Auto layout */
+
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    padding: 12px 48px
+    gap: 10px
+
+    /* Accent */
+
+    background: $accent
+
+    /* Change crypto */
+    font-family: 'Poppins'
+    font-style: normal
+    font-weight: 500
+    font-size: 20px
+    line-height: 30px
+    /* identical to box height */
+
+    /* OnAccent */
+    color: $onAccent
+
+    &__i18n_ukr
+      font-family: 'Open Sans'
+      font-style: normal
+      font-weight: 600
+      font-size: 20px
+      line-height: 27px
+
+
+main
+  padding-left: 105px
+  padding-top: 220px
+
+.headline *
+  margin: 0
+
+/* Headline */
+.headline
+  /* Auto layout */
+
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  padding: 0px
+  gap: 36px
+
+  width: 699px
+  height: 262px
+
+  /* Title container */
+  &__container
+    /* Auto layout */
+
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    padding: 0px
+    gap: 16px
+
+    width: 699px
+    height: 172px
+
+
+    /* Inside auto layout */
+
+    flex: none
+    order: 0
+    flex-grow: 0
+
+  /* Title */
+  &__title
+    width: 699px
+    height: 108px
+
+    font-family: 'Poppins'
+    font-style: normal
+    font-weight: 400
+    font-size: 36px
+    line-height: 54px
+
+    /* OnBackground */
+
+    color: $onBackground
+
+
+    /* Inside auto layout */
+
+    flex: none
+    order: 0
+    flex-grow: 0
+
+    &__i18n_ukr
+      height: 98px
+
+      font-family: 'Open Sans'
+      font-style: normal
+      font-weight: 400
+      font-size: 36px
+      line-height: 49px
+
+  /* Subtitle */
+  &__subtitle
+    width: 366px
+    height: 48px
+
+    font-family: 'Poppins'
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 24px
+    /* or 133% */
+
+
+    /* OnBackgroundLighter */
+
+    color: $onBackgroundLighter
+
+
+    /* Inside auto layout */
+
+    flex: none
+    order: 1
+    flex-grow: 0
+
+    &__i18n_ukr
+      font-family: 'Open Sans'
+      font-style: normal
+      font-weight: 400
+      font-size: 18px
+      line-height: 24px
+      /* or 133% */
